@@ -4,28 +4,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Amrutha Sri - Portfolio</title>
     <link rel="icon" href="port.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fff0f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #263445;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffe4ec, #f8c8dc);
+            padding: 35px 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        header h1 {
+            color: #9d174d;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .profile-photo {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px #9d174d35;
+        }
+
+        nav {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #9d174d;
+            background-color: white;
+            padding: 9px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #be185d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #ec8caf;
+            box-shadow: 0 3px 12px #0000000c;
+            transition: 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px #9d174d18;
+        }
+
+        section h2 {
+            color: #9d174d;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fce7f3;
+        }
+
+        section p {
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 22px;
+            line-height: 2;
+        }
+
+        li::marker {
+            color: #ec8caf;
+        }
+
+        section a {
+            color: #be185d;
+            text-decoration: none;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #9d174d;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 25px;
+            border-radius: 12px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            header {
+                padding: 25px 15px;
+            }
+
+            .intro {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-        <h1>Amrutha Sri K</h1>
-        <p>B.Tech Information Technology Student</p>
+        <div class="intro">
+
+            <div class="intro-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p><strong>Amrutha Sri K</strong></p>
+                <p>B.Tech Information Technology Student</p>
+                <p>Interested in full-stack development and improving my technical skills.</p>
+            </div>
+
+            <img src="profile.jpg"
+                 alt="Amrutha Sri profile photo"
+                 class="profile-photo">
+
+        </div>
 
         <nav>
-            <a href="#about">About</a> 
-            <a href="#skills">Skills</a> 
-            <a href="#projects">Projects</a> 
-            <a href="#certificates">Certificates</a> 
-            <a href="#achievements">Achievements</a> 
-            <a href="#strengths">Strengths</a> 
-            <a href="#education">Education</a> 
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Courses</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#strengths">Strengths</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <hr>
 
     <main>
+
         <section id="about">
             <h2>About Me</h2>
             <p>I am a final-year IT student at S.A. Engineering College, Chennai.</p>
@@ -89,14 +277,17 @@
             <p>Phone: 9361092237</p>
             <p>
                 LinkedIn:
-                <a href="https://www.linkedin.com/in/amruthasri-k">My Profile</a>
+                <a href="https://www.linkedin.com/in/amruthasri-k"
+                   target="_blank"
+                   rel="noopener noreferrer">My Profile</a>
             </p>
         </section>
+
     </main>
 
-    <hr>
     <footer>
-        <p>&copy; 2026 Amrutha Sri K</p>
+        <p>&copy; 2026 Amrutha Sri K | My Portfolio</p>
     </footer>
+
 </body>
 </html>

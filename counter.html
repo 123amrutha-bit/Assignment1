@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js counter</title>
+</head>
+<body>
+    <h2>Result: <span id="result">0</span></h2>
+    <button onclick="sum()">Addition</button>
+    <button onclick="difference()">Subtraction</button>
+    <button id="Button">Multiplication</button>
+    <button onclick="divide()">Division</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        const a = 10;
+        const b = 5;
+
+        function sum() {
+            document.getElementById("result").innerhtml = a + b;
+        }
+
+        function difference() {
+            document.getElementById("result").innerText = a - b;
+        }
+        function multiply() {
+            document.getElementById("result").innerText = a * b;
+        }
+        document.getElementById("Button").addEventListener("click", multiply);
+        function divide() {
+            document.getElementById("result").innerText = a / b;
+        }
+        function reset() {
+            document.getElementById("result").innerText = 0;
+        }
+    </script>
+</body>     
+</html>
